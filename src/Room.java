@@ -27,7 +27,10 @@ public class Room {
     public int getNumber() { return number; }
     public boolean isOccupied() { return occupied; }
 
-@Override
+    // THIS WAS THE MISSING PIECE:
+    public RoomType getRoomType() { return type; }
+
+    @Override
     public String toString() {
         return "Room " + number + " (" + type.getKind() + ")";
     }
