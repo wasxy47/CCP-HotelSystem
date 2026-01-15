@@ -12,9 +12,9 @@ public class Guest {
 
     public String getName() { return name; }
     public String getAddressDetails() { return addressDetails; }
-}
 
 @Override
     public String toString() {
         return "Guest: " + name;
     }
+}
