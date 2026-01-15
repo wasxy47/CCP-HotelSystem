@@ -27,3 +27,8 @@ public class Room {
     public int getNumber() { return number; }
     public boolean isOccupied() { return occupied; }
 }
+
+@Override
+    public String toString() {
+        return "Room " + number + " (" + type.getKind() + ")";
+    }

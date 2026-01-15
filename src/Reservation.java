@@ -36,3 +36,8 @@ public class Reservation {
 
     public int getNumber() { return number; }
 }
+
+@Override
+    public String toString() {
+        return "Reservation #" + number + " for " + startDate.toString();
+    }
