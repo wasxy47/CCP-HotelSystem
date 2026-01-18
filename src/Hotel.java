@@ -31,7 +31,7 @@ public class Hotel {
     }
 
     public Reservation createReservation(Date start, Date end, RoomType type, ReserverPayer payer) {
-        int resNum = new Random().nextInt(1000); // Generate random ID
+        int resNum = new Random().nextInt(999) + 1; // Generate random ID from 1 to 1000
         Reservation res = new Reservation(start, end, resNum);
         res.setPayer(payer);
         res.addRoomRequest(type, 1);
